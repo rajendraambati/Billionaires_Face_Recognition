@@ -1,3 +1,4 @@
+fastapi
 facenet-pytorch
 opencv-python
 opencv-python-headless
