@@ -18,18 +18,18 @@ device = torch.device('cpu')
 mtcnn_model_path = 'inception_resnet_v1_mtcnn.pth'  # Update this path to your MTCNN model
 mtcnn = MTCNN(keep_all=True, device=device)
 mtcnn.load_state_dict(torch.load(mtcnn_model_path, map_location=device))
-st.write("MTCNN model loaded successfully.")
+#st.write("MTCNN model loaded successfully.")
 
 # Load Inception Resnet V1 for face recognition using the specified weights
 recognition_model_path = 'inception_resnet_v1_weights.pth'  # Update this path to your recognition model
 model = InceptionResnetV1(pretrained='vggface2').eval().to(device)
 model.load_state_dict(torch.load(recognition_model_path, map_location=device))
-st.write("Inception ResNet V1 model loaded successfully.")
+#st.write("Inception ResNet V1 model loaded successfully.")
 
 # Load the face database from a pickle file
 with open('face_database.pkl', 'rb') as f:  # Update this path to your pickle file
     face_database = pickle.load(f)
-st.write("Face database loaded successfully.")
+#st.write("Face database loaded successfully.")
 
 def extract_face_embeddings(image):
     img_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
