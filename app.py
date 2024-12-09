@@ -98,7 +98,7 @@ def main():
 
             # Display the processed image with bounding boxes and labels
             st.image(image_np, caption='Processed Image with Detected Faces', use_column_width=True)
-            st.write(name)
+            #st.write(name)
         else:
             st.write("No faces detected.")
 
