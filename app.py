@@ -6,10 +6,10 @@ import pickle
 from PIL import Image
 import streamlit as st
 from facenet_pytorch import MTCNN, InceptionResnetV1
-import warnings
+#import warnings
 
 # Suppress all deprecation warnings
-warnings.filterwarnings("ignore")
+#warnings.filterwarnings("ignore")
 
 # Initialize device
 device = torch.device('cpu')
