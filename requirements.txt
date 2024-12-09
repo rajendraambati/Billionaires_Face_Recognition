@@ -1,6 +1,5 @@
 fastapi
 facenet-pytorch
-opencv-python
 opencv-python-headless
 torch
 numpy
