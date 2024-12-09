@@ -5,4 +5,3 @@ torch
 numpy
 streamlit
 Pillow
-pickle5
